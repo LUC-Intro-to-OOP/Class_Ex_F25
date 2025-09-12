@@ -32,7 +32,8 @@ public class DailyLog {
 
 
         //Enfore that only 11, 22, 33, 44 and sentinel value can be entered
-
+        //Looping structure to lock them into the loop. It's only when they enter the correct value 
+        //that would allow the end-user to exit the loop
 
         //Looping structure that allow for continous iteration and checks against sentinel value
         while(attendantID != EXIT){
