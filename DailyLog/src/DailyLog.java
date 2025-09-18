@@ -31,12 +31,17 @@ public class DailyLog {
         attendantID = Integer.parseInt(input.nextLine());
 
 
-        //Enfore that only 11, 22, 33, 44 and sentinel value can be entered
-        //Looping structure to lock them into the loop. It's only when they enter the correct value 
-        //that would allow the end-user to exit the loop
+
 
         //Looping structure that allow for continous iteration and checks against sentinel value
-        while(attendantID != EXIT){
+        do{
+                //Enfore that only 11, 22, 33, 44 and sentinel value can be entered
+                //Looping structure to lock them into the loop. It's only when they enter the correct value 
+                //that would allow the end-user to exit the loop
+                while(attendantID != 11 && attendantID != 22 && attendantID != 33 && attendantID != 44){
+                    System.out.println("Invalide Entry, please enter a valid atendant ID number 11, 22, 33 or 44");
+                    attendantID = Integer.parseInt(input.nextLine());
+                }
 
                 //Selection structure to Determine which dogs to display based on attendant id number 
 
@@ -77,12 +82,8 @@ public class DailyLog {
                 //PRIMER
                 attendantID = Integer.parseInt(input.nextLine());
 
-        
-                //Enfore that only 11, 22, 33 and 44 can be entered, including sentinel value
 
-
-
-        }
+        }while(attendantID != EXIT);
         //Output total time and count by color 
 
         /*
