@@ -15,8 +15,8 @@ public class DailyLog {
         //Declare scanner object
         Scanner input = new Scanner(System.in);
 
-        //WELCOME MESSAGE
-        System.out.println("Welcome to the MPLS care attendant daily log program.  This program will allow you to enter a care attendant id and produce a log for the dogs under the attendant's care.");
+        //Call Welcome Message method
+        outputWelcomeMsg(); //Define or involk the method
 
         //Create Space
         System.out.println("");
@@ -98,5 +98,20 @@ public class DailyLog {
 
 
 
+    }//end of main method
+
+    //Defining the method
+    public static void outputWelcomeMsg(){
+        //WELCOME MESSAGE
+        System.out.println("Welcome to the MPLS care attendant daily log program.  This program will allow you to enter a care attendant id and produce a log for the dogs under the attendant's care.");
+
     }
-}
+
+    //method to do defensive programming
+    public static void checkAttendantID(int attendantID){
+
+    }//end of checkAttendantID method
+
+    //method to determine color group
+
+}//End of DailyLog class
