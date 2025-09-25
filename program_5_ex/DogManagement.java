@@ -23,8 +23,7 @@ public class DogManagement {
         welcome();
         displayPrompt(); //Calls method to allow user to enter number option
 
-        
-
+    
     }
 
     //Welcome method that outputs introductory text explaining program
